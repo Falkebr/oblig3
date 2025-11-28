@@ -1,0 +1,12 @@
+version="0.3"
+last_updated="2025-11-27"
+
+[org]
+disclosures = [
+	{ doc_type='sustainability-page', url='https://marsbj.folk.ntnu.no/evidence' }
+]
+
+[upstream]
+services = [
+	{ domain='cloudflare.com', service_type='hosting-provider' }
+]
