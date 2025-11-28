@@ -1,0 +1,345 @@
+/* ============================================
+ * SPECIES DETAIL PAGE STYLES
+ * Specific styles for individual species pages
+ * ============================================ */
+
+/* Species Hero Section */
+.species-detail {
+    padding: 40px 0;
+}
+
+.species-hero {
+    border-radius: 20px;
+    padding: 80px 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 10px 40px var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.species-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.species-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.species-hero-mammal {
+    background: linear-gradient(135deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.species-hero-spirit {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.species-hero-bird {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.species-hero-default {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+}
+
+.species-hero-title {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.species-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Detail Header */
+.detail-header {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.detail-header h2 {
+    font-size: 3rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid var(--light-green);
+}
+
+.info-box-label {
+    color: var(--primary-green);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.info-box-value {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Characters Section */
+.characters-section,
+.additional-section {
+    margin-top: 40px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--light-green);
+    border-radius: 3px;
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.character-card {
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    border: 2px solid var(--light-green);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow);
+    border-color: var(--primary-green);
+}
+
+.character-card h4 {
+    color: var(--primary-green);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-green);
+}
+
+.character-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-female {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.avatar-male {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.avatar-neutral {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+}
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.character-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.detail-label {
+    color: var(--warm-brown);
+    font-weight: 600;
+}
+
+.detail-value {
+    color: var(--text-dark);
+    text-align: right;
+}
+
+/* Additional Info Section */
+.info-section {
+    margin-bottom: 35px;
+}
+
+.info-section:last-child {
+    margin-bottom: 0;
+}
+
+.info-section h4 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid var(--light-green);
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.info-tag {
+    background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(45, 125, 80, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.info-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(45, 125, 80, 0.4);
+}
+
+/* Responsive Design for Species Pages */
+@media (max-width: 768px) {
+    .species-hero {
+        padding: 50px 30px;
+    }
+    
+    .species-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .species-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .detail-header {
+        padding: 25px;
+    }
+    
+    .detail-header h2 {
+        font-size: 2rem;
+    }
+    
+    .characters-section,
+    .additional-section {
+        padding: 25px;
+    }
+    
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .species-hero {
+        padding: 40px 20px;
+        margin-bottom: 25px;
+    }
+    
+    .species-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .species-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .detail-header {
+        padding: 20px;
+    }
+    
+    .detail-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .info-box {
+        padding: 15px;
+    }
+    
+    .characters-section,
+    .additional-section {
+        padding: 20px;
+    }
+    
+    .character-card {
+        padding: 20px;
+    }
+    
+    .character-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
